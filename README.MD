@@ -19,8 +19,8 @@ scikit_learn
 
 ```
 
-│   README.md                     : This file
-│   model.py.py                : Linear regression model file
+│   README.md         : This file
+│   model.py.py       : Linear regression model file
 │   app.py            : Flask app  
 |   explore.ipynb     : Exploration of data
 |   legionall.csv     : sample data created randomly
