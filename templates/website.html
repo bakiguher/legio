@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Romanus Internetus</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <div class="container">
+  <body>
+
+    <div class="row">
+      <div class="col-sm"></col>
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="{{url_for('static', filename='logos.jpg')}}" align="middle" width=40/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Regions <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ongoing Wars</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tax Collection
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="static/logout.html">Logout</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+
+
+
+        </col>
+          <div class="col"></col>
+
+    </div>
+
+    
+  <div class="row">
+    <div class="col">
+      <h5 style="color:blue;text-align:center">News from the Empire </h5>
+      <p>Is this the tomb of Romulus, 'father of Rome'?</p>
+      <p>Sunday games are postponed, gladiators are unhappy.</p>
+      <p>Wine prices going up again</p>
+      <h5 style="color:blue;text-align:center">Weather Report </h5>
+      <img src="{{url_for('static', filename='weather.jpg')}}" align="middle" width=250/>
+      <p>It is good you can wear sandals</p>
+
+
+    </div>
+    <div class="col">
+
+    
+     <h4> Legio Daily consumables calculation</h4>
+        <form name="form" , method="POST">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Soldiers</label>
+              <input
+                name="soldier"
+                type="number"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder=""
+              />
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Mules</label>
+              <input
+                name="mule"
+                type="number"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Slaves</label>
+              <input
+                type="number"
+                name="slave"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder=""
+              />
+            </div>
+  
+            <button type="submit" value="Submit" class="btn btn-primary">
+              Run
+            </button>
+          </form>
+         
+          <h2 style="text-align: center ">{{ '%0.0f'|format(water|float) }}  liters of water</h2>
+          <h2 style="text-align: center ">{{ '%0.0f'|format(grain|float)  }}  kg of grain</h2>
+          <h2 style="text-align: center ">{{ '%0.0f'|format(fodder|float)  }} kg of fodder</h2> 
+
+    </div>
+    <div class="col">
+    
+
+      <h5 style="color:blue;text-align:center">Collesium Game Results </h5>
+      <p>No games this week</p>
+
+      <h5 style="color:blue;text-align:center">Markets </h5>
+      <img src="{{url_for('static', filename='markets.jpg')}}" align="middle" width=300/></a>
+
+    </div>
+  </div>
+  <hr>
+  <p class="text-center">Copyright 15</p>
+
+  </body>
+</div>
+</html>
